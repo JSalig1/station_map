@@ -1,2 +1,7 @@
 <h1>Station Map</h1>
-<p>Find me in app/views/stations/index.html.erb</p>
+
+<div>
+  <% @stations.each do |station| %>
+    <%= station.name %>
+  <% end %>
+</div>

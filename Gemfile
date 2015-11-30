@@ -10,11 +10,12 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'clearance'
-gem 'factory_girl_rails'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
   gem 'capybara'
+  gem 'factory_girl_rails'
+  gem 'shoulda-matchers', '~> 3.0'
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
