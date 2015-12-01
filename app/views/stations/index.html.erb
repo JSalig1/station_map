@@ -3,5 +3,8 @@
 <div>
   <% @stations.each do |station| %>
     <%= station.name %>
+    <% station.events.each do |event| %>
+      <%= event.name %>
+    <% end %>
   <% end %>
 </div>
