@@ -1,0 +1,11 @@
+<h1>New Event at <%= @event.station.name %></h1>
+
+<%= form_for @event, url: station_events_path(@event.station) do |form| %>
+  <%= form.label "Name" %>
+  <%= form.text_field :name, placeholder: "Name" %>
+  <%= form.label "Start Date" %>
+  <%= form.date_field :start_date, id: "Start Date" %>
+  <%= form.label "End Date" %>
+  <%= form.date_field :end_date, id: "End Date" %>
+  <%= form.submit %>
+<% end %>

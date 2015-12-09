@@ -6,5 +6,6 @@
     <% station.events.each do |event| %>
       <%= event.name %>
     <% end %>
+    <%= link_to "Add Event", new_station_event_path(station) %>
   <% end %>
 </div>
