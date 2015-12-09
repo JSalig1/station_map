@@ -1,7 +1,7 @@
 FactoryGirl.define do
 
   factory :station do
-    name "Station"
+    name "My Station"
   end
 
 end

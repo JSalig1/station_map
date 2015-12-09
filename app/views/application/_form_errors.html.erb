@@ -1,0 +1,12 @@
+<div class="form-errors">
+  <% if target.errors.any? %>
+
+    <ul>
+      <% target.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  <% end %>
+</div>
+
+<%= yield %>
